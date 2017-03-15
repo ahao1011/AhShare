@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name         = 'AhShare'
-  s.version      = '0.0.8'
+  s.version      = '0.1.2'
   s.ios.deployment_target = '8.0'
   s.summary      = 'Based on the social components of the African union (au) by 阿浩'
   s.homepage     = 'https://github.com/ahao1011/AhShare'
