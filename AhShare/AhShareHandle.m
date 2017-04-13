@@ -77,7 +77,7 @@
     }
 }
 
-+ (void)AhShareHandleGetUserInfoFormPlatform:(AhSharePlatform)platformType DoHandle:(void (^)(BOOL, NSString *, NSString *, NSString *))dohandle{
++ (void)AhShareHandleGetUserInfoFormPlatform:(AhSharePlatform)platformType DoHandle:(void(^)(BOOL issus, NSString*username,NSString *usergender,NSString*usericonurl,NSString*uid,NSString*accessToken))dohandle{
     
     UMSocialPlatformType type = [self changeType:platformType];
     [[UMSocialManager defaultManager] getUserInfoWithPlatform:type currentViewController:nil completion:^(id result, NSError *error) {
@@ -85,7 +85,7 @@
             
             if (dohandle!=nil) {
                 
-                dohandle(NO,@"",@"",@"");
+                dohandle(NO,@"",@"",@"",@"",@"");
             }
             
         } else {
@@ -106,7 +106,7 @@
             
             if (dohandle!=nil) {
                 
-                dohandle(YES,resp.name,resp.gender,resp.iconurl);
+                dohandle(YES,resp.name,resp.gender,resp.iconurl,resp.uid,resp.accessToken);
             }
             
         }

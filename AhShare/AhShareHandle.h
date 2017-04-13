@@ -27,7 +27,7 @@
  @param platformType 登录平台
  @param dohandle 登录后回调
  */
-+ (void)AhShareHandleGetUserInfoFormPlatform:(AhSharePlatform)platformType DoHandle:(void(^)(BOOL issus, NSString*username,NSString *usergender,NSString*usericonurl))dohandle;
++ (void)AhShareHandleGetUserInfoFormPlatform:(AhSharePlatform)platformType DoHandle:(void(^)(BOOL issus, NSString*username,NSString *usergender,NSString*usericonurl,NSString*uid,NSString*accessToken))dohandle;
 
 /**
  *  获得从sso或者web端回调到本app的回调

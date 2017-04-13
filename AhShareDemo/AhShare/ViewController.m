@@ -39,16 +39,14 @@
 - (IBAction)qq:(id)sender {
     
     
-    [AhShareHandle AhShareHandleGetUserInfoFormPlatform:AhShare_QQ DoHandle:^(BOOL issus, NSString *username, NSString *usergender, NSString *usericonurl) {
-        
+    [AhShareHandle AhShareHandleGetUserInfoFormPlatform:AhShare_QQ DoHandle:^(BOOL issus, NSString *username, NSString *usergender, NSString *usericonurl, NSString *uid, NSString *accessToken) {
         
     }];
     
 }
 - (IBAction)wx:(id)sender {
     
-    [AhShareHandle AhShareHandleGetUserInfoFormPlatform:AhShare_WechatSession DoHandle:^(BOOL issus, NSString *username, NSString *usergender, NSString *usericonurl) {
-        
+    [AhShareHandle AhShareHandleGetUserInfoFormPlatform:AhShare_WechatSession DoHandle:^(BOOL issus, NSString *username, NSString *usergender, NSString *usericonurl, NSString *uid, NSString *accessToken) {
         
     }];
 
